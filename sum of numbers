@@ -27,3 +27,17 @@ while(number>0){
     number=Math.floor(number/10);
 }
 console.log(`Largest digit is ${largest}`);
+
+//Find the even digit in the number
+let number=123;
+count=0;
+evendigit=0;
+while(number>0){
+    let digit=number%10;
+   if(digit%2==0) {
+    count++;
+    console.log(evendigit+=digit);
+   }
+    number=Math.floor(number/10);   
+}
+console.log(`the total number of even digits in the number are ${count} that is ${evendigit}`);
