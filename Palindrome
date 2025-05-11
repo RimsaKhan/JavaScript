@@ -1,0 +1,9 @@
+let message="MoM";
+let lowercasemessage=message.toLowerCase();
+let reversedmess=lowercasemessage.split('').reverse().join('');
+if(lowercasemessage===reversedmess){
+    console.log("it is a palindrome");
+}
+else{
+    console.log("it is not a palindrome");
+}
