@@ -1,0 +1,17 @@
+//Write a JS program to find the no of digits in a number.Example:if number=287152, count=6
+let number=287152;
+let count=0;
+while(number>0){
+  number=Math.floor(number/10);
+  count++;
+}
+console.log(count);
+//Write a JS program to find the sum of digits in a number.Example:if number=287152,sum=25
+let number=287152;
+let sum=0;
+while(number>0){
+    let digits=number%10;
+    sum+=digits;
+    number=Math.floor(number/10);
+}
+console.log(sum);
