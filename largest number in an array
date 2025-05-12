@@ -1,0 +1,10 @@
+let arr=[24,90,34,42];
+let num=34;
+function largestest(arr,num){
+   for(let i=0;i<arr.length;i++){
+    if(arr[i]>num){
+     console.log(arr[i]);
+    }
+   }
+}
+largestest(arr,num);
