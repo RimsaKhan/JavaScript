@@ -1,0 +1,18 @@
+/////
+let arr=[1,2,3,4,5,6,7,8,9,10];
+console.log(...arr);
+let str="rimshajamalkhan";
+console.log(...str);
+/////
+let arr=[1,2,3,4,5];
+let newarr=[...arr];
+console.log(newarr);
+console.log(newarr.push(34));
+console.log(newarr);
+*///////
+let odd=[1,3,5,7,9];
+let even=[2,4,6,8,10];
+let result=[...odd,...even];
+let result2=[...even,...odd];
+console.log(result);
+console.log(result2);
