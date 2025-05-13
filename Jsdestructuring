@@ -1,0 +1,3 @@
+let names=["bushra","arifa","rimsha","adib","faiza","mano",];
+let [winner,runnerup,secondrunnerup,...others]=names;
+console.log(others);
