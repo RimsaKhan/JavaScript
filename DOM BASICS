@@ -1,0 +1,6 @@
+let newinput=document.createElement("input");
+newinput.type="text";
+newinput.placeholder="enter your name";
+let btn=document.createElement("button");
+btn.innerText="click me";
+document.querySelector("body").append(newinput,btn);
