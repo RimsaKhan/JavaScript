@@ -1,0 +1,9 @@
+let but=document.getElementById("btn")
+but.addEventListener("click",function(){
+ let r=Math.floor(Math.random()*256);
+ let g=Math.floor(Math.random()*256);
+ let b=Math.floor(Math.random()*256);
+ let color=`rgb(${r},${g},${b})`;
+ document.getElementById("head").innerText=color;
+ document.getElementById("contain").style.backgroundColor=color;
+})
