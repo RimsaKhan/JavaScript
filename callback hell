@@ -11,4 +11,43 @@ colorchange("red",1000,()=>{
     colorchange("green",1000,()=>{
    colorchange("pink",1000);
     });
+////////CALLBACK HELL EXAMPLE////////
+
+function savetodb(data,success, failure){
+    let internetspeed=Math.floor(Math.random()*10)+1;
+    if(internetspeed>4){
+    success();
+    }
+    else{
+    failure();
+    }
+}
+savetodb("rimsha",()=>{
+    console.log("your data was saved:");
+savetodb(
+     "helloworld",()=>{
+     console.log("success2:data2 saved");
+savetodb(
+    "apnacollege",()=>{
+        console.log("success3:daa3 saved");
+savetodb(
+    "data",()=>{
+        console.log("success4:data4 saved");   
+    },()=>{
+           console.log("failure4:data2 saved");
+    }
+)
+    },()=>{
+        console.log("failure3:weak data");
+    }
+)
+     },()=>{
+     console.log("failure2:weakconnection");
+     }
+);
+}, 
+()=>{
+    console.log("weak connection data was not saved");
+});
+
 });
