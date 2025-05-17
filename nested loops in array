@@ -1,0 +1,8 @@
+let studentinfo=
+   [["Rimsha",87],["Bushra",98],["Arifa",100]];
+   for(let i=0;i<studentinfo.length;i++){
+        console.log(`information of student ${i+1}:`);
+   for(let j=0;j<studentinfo[i].length;j++){
+        console.log(studentinfo[i][j]);
+    }
+   }

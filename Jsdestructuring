@@ -1,0 +1,17 @@
+//************************DESTRUCTURING FOR ARRAY**********************************
+let names=["bushra","arifa","rimsha","adib","faiza","mano",];
+let [winner,runnerup,secondrunnerup,...others]=names;
+console.log(others);
+
+//************************DESTRUCTURING FOR OBJECT**********************************
+const student={
+    name:'rimsha',
+    age:21,
+    class:9,
+    subjects:["hindi","english","maths","science"],
+    username:"rimsha@123",
+    password:"sdhebdncj"
+};
+let newstudentdetail={username:user,password:secret,city="mumbai"}=student;
+console.log(secret);
+console.log(city);

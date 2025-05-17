@@ -1,0 +1,16 @@
+function sum(...args){
+    for(let i=0;i<args.length;i++){
+        console.log(args[i]);
+    }
+} 
+console.log(sum(1,4));
+//
+function sum(...args){
+    return args.reduce((min,item)=>{
+     if(min<item){
+        return min;
+     }else{
+        return item;
+     }
+    });
+}console.log(sum(3,5,2,5,7,9));

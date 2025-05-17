@@ -1,0 +1,22 @@
+function oddOrevenfactory(request){
+    if(request=="odd"){
+       return function(n){
+       console.log(!(n%2==0));
+       console.log("the number is odd");
+    } 
+    }
+    else if(request=="even"){
+        return function(n){
+        console.log(n%2==0);
+        console.log("the number is even");
+    }
+    }
+    else{
+    console.log("wrong request");
+    }
+}
+let request="odd";
+let resultFunc = oddOrevenfactory("odd");
+resultFunc(4);
+let resultFunc2 = oddOrevenfactory("even");
+resultFunc2(4);

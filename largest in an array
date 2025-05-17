@@ -1,0 +1,8 @@
+let number=[3,7,2,9,5];
+let largest=number[0];
+for(let i=0;i<number.length;i++){
+    if(number[i]>largest){
+        largest=number[i];
+    }
+}
+    console.log(`${largest} is the biggest`);

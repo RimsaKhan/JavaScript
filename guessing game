@@ -1,0 +1,12 @@
+let fav="avatar";
+let guess=prompt("Please guess your favorite movie");
+while((guess!=fav )&&(guess!='quit')){
+        guess=prompt('wrong guess , Please guess your favorite movie');
+    i++;
+}
+if(guess==fav){
+    console.log("u r right");
+}
+else{
+    console.log("you quit");
+}

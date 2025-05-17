@@ -1,0 +1,27 @@
+//Qs1.Create a new input and button element on the page using JavaScript only.Set the text of button to “Click me”
+let newinput=document.createElement("input");
+newinput.type="text";
+newinput.placeholder="enter your name";
+let btn=document.createElement("button");
+btn.innerText="click me";
+document.querySelector("body").append(newinput,btn);
+
+//Qs2.Add following attributes to the element:-Change placeholder value of input to “username”- Change the id of button to “btn
+newinput.setAttribute("placeholder","username");
+btn.setAttribute("id","btn");
+
+//Qs3.Access the btn using the querySelector and button id.Change the button background color to blue and text color to white.
+document.querySelector("btn");
+btn.classList.add("stylebtn");
+
+Qs4.Create an h1 element on the page and set its text to “DOMPractice” underlined.Change its color to purple.
+
+let heading=document.createElement("h1");
+heading.innerText="DOMPractice";
+heading.classList.add("stylehead");
+document.querySelector("body").append(heading);
+
+Qs5.Create a p tag on the page and set its text to “ApnaCollegeDeltaPractice”,where Delta is bold
+let para=document.createElement("p");
+para.innerHTML="Apna college <b> Delta</b> Practice";
+document.querySelector("body").append(para);

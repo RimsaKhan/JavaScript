@@ -1,0 +1,17 @@
+let obj=[
+    {
+    name:"rimsha",
+    age:20,
+    },
+    {
+    name:"Bushra",
+    age:27,
+    },
+    {
+    name:"Arifa",
+    age:25,
+    }
+];
+obj.forEach((student)=>{
+    console.log(student.age);
+});

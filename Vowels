@@ -1,0 +1,12 @@
+let string="hbbasiofbx";
+let vowels="aeiouAEIOU";
+let  count=0;
+function vow(string){
+  for(let i=0;i<string.length;i++){
+    if(vowels.indexOf(string[i])!=-1){
+        count++;
+    }
+  }
+  return count;
+}
+console.log(vow(string));

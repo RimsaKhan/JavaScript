@@ -1,0 +1,11 @@
+let country=["Australia","Germany","United states of America"];
+let longest="";
+function longestcountry(country){
+    for(let i=0;i<country.length;i++){
+        if(country[i].length>longest.length){
+            longest=country[i];
+        }
+    }
+    return longest;
+}
+console.log(longestcountry(country));
