@@ -1,3 +1,4 @@
+//////Await func
 function getnum(){
     return new Promise((resolve,reject)=>{
    setTimeout(()=>{
@@ -13,4 +14,6 @@ await getnum();
 await getnum();
 await getnum();
 await getnum();
+
+/////////Await func demo
 }
