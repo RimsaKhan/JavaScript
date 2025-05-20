@@ -1,0 +1,37 @@
+///food fact api call
+let url="https://world.openfoodfacts.org/api/v0/product/737628064502.json";
+let btn=document.querySelector("button");
+btn.addEventListener("click", async () => {
+      let fact = await getFoodFact();
+      let p = document.querySelector("p");
+      p.innerText = fact;
+    });
+ const productCodes = [
+      "737628064502", // Coca-Cola
+      "3017620429484", // Nutella
+      "5000159484695", // KitKat
+      "5449000000996", // Fanta
+      "8000500037567"  // Kinder
+    ];
+    async function getFoodFact() {
+      try {
+        let random=Math.floor(Math.random()*productCodes.length);
+        let code = productCodes[random];
+        const url = `https://world.openfoodfacts.org/api/v0/product/${code}.json`;
+       
+        let res=await axios.get(url);
+        let product = res.data.product;
+
+        // You can customize the fact you want to show
+        let name = product.product_name;
+        let ingredients = product.ingredients_text;
+        let country = product.countries;
+
+        return `Product: ${name}\nIngredients: ${ingredients}\nAvailable in: ${country}`;
+      } catch (err) {
+        console.log("Error occurred", err);
+        return "Couldn't fetch food facts.";
+      }
+    }
+
+
