@@ -1,4 +1,12 @@
 ///food fact api call
+//HTML
+ <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+    <button>Enter a random food fact</button>
+    <p></p>
+    <script src="app.js"></script>
+</body>
+//JS
 let url="https://world.openfoodfacts.org/api/v0/product/737628064502.json";
 let btn=document.querySelector("button");
 btn.addEventListener("click", async () => {
