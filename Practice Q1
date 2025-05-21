@@ -1,0 +1,49 @@
+//Making a counter using js
+// WAY 1
+let btn1=document.querySelector("#btn1");
+let btn2=document.querySelector("#btn2");
+let input = document.querySelector("input");
+let h1=document.querySelector("h1");
+let resetbtn=document.querySelector("#btn3");
+let count=0;
+btn1.addEventListener("click",function(){
+   let num=parseInt(input.value);
+   if(!isNaN(num)){
+    count+=num;
+    h1.innerText=count;
+   }
+});
+btn2.addEventListener("click",function(){
+   let  num=parseInt(input.value);
+  if(!isNaN(num)){
+    count-=num;
+    h1.innerText=count;
+   }
+});
+resetbtn.addEventListener("click",()=>{
+count=0;
+h1.innerText=count;
+});
+
+
+// WAY 2
+let btn1=document.querySelector("#btn1");
+let btn2=document.querySelector("#btn2");
+let input = document.querySelector("input");
+let h1=document.querySelector("h1");
+let resetbtn=document.querySelector("#btn3");
+
+btn1.addEventListener("click",function(){
+    let countervalue=parseInt(h1.innerText);
+    let inputvalue=parseInt(input.value);
+    h1.innerText=countervalue+inputvalue;
+});
+btn2.addEventListener("click",function(){
+    let countervalue=parseInt(h1.innerText);
+    let inputvalue=parseInt(input.value);
+    h1.innerText=countervalue-inputvalue;
+});
+resetbtn.addEventListener("click",()=>{
+input.value=0;
+h1.innerText=0;
+});
