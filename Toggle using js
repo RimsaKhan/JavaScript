@@ -1,0 +1,42 @@
+const input1 =document.querySelector("#full-dark-mode");
+const input2 =document.querySelector("#container-dark-mode");
+const container=document.querySelector(".container");
+const input1darkmode=JSON.parse(localStorage.getItem('input1'));
+const input2darkmode=JSON.parse(localStorage.getItem('input2'));
+
+if(input1darkmode)
+{
+    input1.checked=true;
+}
+if(input2darkmode){
+    input2.checked=true;
+}
+ change();
+changecontaineddark();
+function change(){
+   if(input1.checked){
+    document.body.classList.add('dark');
+    localStorage.setItem('input1',true);
+    }
+    else{
+    document.body.classList.remove('dark');
+     localStorage.setItem('input1',false);
+    }
+    changecontaineddark();
+}
+
+input1.addEventListener('change',()=>{
+    change();
+    changecontaineddark();
+})
+function changecontaineddark(){
+    if(input2.checked){
+    container.classList.add('dark');
+    localStorage.setItem('input2',true);
+    }
+    else{
+    container.classList.remove('dark'); 
+    localStorage.setItem('input2',false); 
+    }
+}
+input2.addEventListener('change',changecontaineddark);
