@@ -1,0 +1,19 @@
+function toCamelCase(str){
+const word=str.split(/[-_]/);
+  const firstWord=word[0];
+  let resultword;
+  if(/[A-Z]/.test(str[0])){
+   resultword=firstWord[0].toUpperCase()+firstWord.slice(1);
+  }
+else{
+  resultword=firstWord;
+}
+  for(let i=1;i<word.length;i++){
+    const words=word[i];
+   resultword+= words[0].toUpperCase()+words.slice(1);
+  }
+  return resultword;
+  }
+console.log(toCamelCase("the-stealth-warrior"));
+console.log(toCamelCase("The_Stealth_Warrior"));
+console.log(toCamelCase("The_Stealth-Warrior"));
