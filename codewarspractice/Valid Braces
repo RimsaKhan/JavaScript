@@ -1,0 +1,22 @@
+function validBraces(braces){
+  const bracesplit=braces.split('');
+    let openbrakets=['(','[','{'];
+    let closebrakets=[')',']','}'];
+    let stack=[];
+  for(let brace of bracesplit){
+    if(openbrakets.includes(brace)){
+      stack.push(brace);
+    }
+    else{
+      const lastopened=stack.pop();
+      if(openbrakets.indexOf(lastopened)!==closebrakets.indexOf(brace)){
+        return false;
+      }
+    }
+  }
+  return stack.length===0;
+}
+
+console.log(validBraces("(){}[]" ));
+console.log(validBraces("([{}])"));
+console.log(validBraces("(}"));
