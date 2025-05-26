@@ -1,0 +1,15 @@
+function digitalRoot(n) {
+  while(n>=10){
+  let digits=n.toString().split("");
+  let expressions=digits.join("+");
+  let sum=0;
+  for(let digit of digits){
+    sum+=Number(digit);
+  }
+    console.log(`${expressions}=${sum}`);
+    n=sum;
+}
+  return n;
+  }
+console.log((digitalRoot(16)));
+console.log((digitalRoot(942)));
