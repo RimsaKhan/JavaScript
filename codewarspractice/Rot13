@@ -1,0 +1,25 @@
+function rot13(message){
+  //your code here
+  let text=message.split('');
+  let newstr='';
+  for(let i=0;i<text.length;i++){
+    let char=text[i];
+    if(!char.match(/[A-Za-z]/)){
+      newstr+=char;
+      continue;
+    }
+    let code=char.charCodeAt(0);
+    if(char>='A' && char<='Z'){
+        let newcode=((code-65+13)%26)+65;
+      newstr+=String.fromCharCode(newcode);
+      }
+    else if (char>='a' && char<='z') {
+      let newcode=((code-97+13)%26)+97;
+      newstr+=String.fromCharCode(newcode);
+    }
+  }
+  return newstr;
+}
+console.log(rot13("hello"));
+console.log(rot13("HELLO"));
+console.log(rot13("hii everyone"));
