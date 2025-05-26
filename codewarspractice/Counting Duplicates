@@ -1,0 +1,29 @@
+function duplicateCount(text){
+  let str=text.toLowerCase();
+  let strcount={};
+  let duplicatetotal=[];
+  for(let char of str){
+    if(strcount[char]){
+      strcount[char]++;
+    }
+    else{
+      strcount[char]= 1;
+    }
+}
+for( let char in strcount){
+  if(strcount[char]>1){
+    duplicatetotal.push(char);
+  } 
+}
+let count=duplicatetotal.length;
+console.log(`${text} -> ${duplicatetotal.length} ${duplicatetotal.length === 0 ? "no characters repeats more than once" : duplicatetotal.join(' and ')}`);
+return duplicatetotal.length;
+}
+console.log((duplicateCount("abcde")));
+console.log((duplicateCount("aabbcde" )));
+console.log((duplicateCount("aabBcde")));
+console.log((duplicateCount("indivisibility")));
+console.log((duplicateCount("Indivisibilities" )));
+console.log((duplicateCount("Indivisibilities" )));
+console.log((duplicateCount("aA11")));
+console.log((duplicateCount("ABBA" )));
