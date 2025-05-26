@@ -1,0 +1,19 @@
+function order(words){
+  if(words===""){
+    return "";
+    }
+  let word=words.split(' ');
+  let result=[];
+    for(let i=1;i<=9;i++){
+      for(let j=0;j<word.length;j++){
+        if(word[j].includes(i.toString())){
+          result.push(word[j]);
+        }
+      }
+    }
+  return result.join(' ');
+}
+
+console.log(order("is2 Thi1s T4est 3a"));
+console.log(order("4of Fo1r pe6ople g3ood th5e the2"));
+console.log(order(""));
