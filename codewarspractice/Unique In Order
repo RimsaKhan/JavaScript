@@ -1,0 +1,12 @@
+var uniqueInOrder = function(iterable) {
+  let emptyresult=[];
+  for(let i=0;i<iterable.length;i++){
+    if(iterable[i]!==iterable[i-1]){
+      emptyresult.push(iterable[i]);
+    }
+  }
+  return emptyresult;
+}
+console.log(uniqueInOrder('AAAABBBCCDAABBB'));
+console.log(uniqueInOrder('ABBCcAD'));
+console.log(uniqueInOrder([1,2,2,3,3]));
