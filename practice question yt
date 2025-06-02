@@ -39,3 +39,18 @@ console.log(string("Rimsha"));
 const string=(str)=>
     str.indexOf('New!')===0 ? str : `New!${str}`;
 console.log(string('New!offer'));
+
+6. write a JavaScript program to create a new string from a given string, taking the first three characters and the last three characters of a string and adding them together. The
+string length must be three or more. If not, the original string is returned.
+const string=(str)=>{
+    let result=str.length>=3 ?str.slice(0,3)+str.slice(-3):str;
+   return result;
+}
+console.log(string("hell"));
+console.log(string("lionis the king"));
+console.log(string("jsistough"));
+
+Write a JavaScript program to extract the first half of a string of even length.
+const string=(str)=>(str.length%2)===0?str.slice(0,str.length/2):str;
+console.log(string("helloworld"));
+console.log(string("javascripts"));
