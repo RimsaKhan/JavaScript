@@ -22,3 +22,20 @@ const years=date.getFullYear();
 return `${days}/${months}/${years}`;
 }
 console.log(dates());
+
+5. Adding new in front of the string if doesnot contain it already else just return the same str
+const string=(str)=>{
+    const newword="New!";
+    if(str.startsWith(newword)){
+        return str;
+    }
+    else{
+    return newword + str;
+    }
+};
+console.log(string("New!Rimsha"));
+console.log(string("Rimsha"));
+5. Shorter version of 5th number question
+const string=(str)=>
+    str.indexOf('New!')===0 ? str : `New!${str}`;
+console.log(string('New!offer'));
