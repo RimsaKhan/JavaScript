@@ -1,4 +1,0 @@
-const checknum=(num1,num2)=>
-num1===100||num2===100||(num1+num2)===100;
-console.log(checknum(1,6));
-console.log(checknum(100,100));

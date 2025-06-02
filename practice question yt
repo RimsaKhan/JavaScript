@@ -1,0 +1,10 @@
+1. Return true if one of the number equals to 100, or the sum of both the numbers is 100, and return false if none of them is true.
+const checknum=(num1,num2)=>
+num1===100||num2===100||(num1+num2)===100;
+console.log(checknum(1,6));
+console.log(checknum(100,100));
+
+2. Find the extension in js
+const getfileextension=(filename)=>filename.split('.').pop();
+console.log(getfileextension("rimsha.html"));
+console.log(getfileextension("rimsha.html.js"));
