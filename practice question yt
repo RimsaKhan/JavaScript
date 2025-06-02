@@ -50,7 +50,11 @@ console.log(string("hell"));
 console.log(string("lionis the king"));
 console.log(string("jsistough"));
 
-Write a JavaScript program to extract the first half of a string of even length.
+7. Write a JavaScript program to extract the first half of a string of even length.
 const string=(str)=>(str.length%2)===0?str.slice(0,str.length/2):str;
 console.log(string("helloworld"));
 console.log(string("javascripts"));
+
+8. Write a JavaScript program to concatenate two strings except the first character?
+const string=(str1,str2)=>str1.slice(1)+" "+str2.slice(1);
+console.log(string("rimsha","khan"));
