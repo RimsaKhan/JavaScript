@@ -58,3 +58,19 @@ console.log(string("javascripts"));
 8. Write a JavaScript program to concatenate two strings except the first character?
 const string=(str1,str2)=>str1.slice(1)+" "+str2.slice(1);
 console.log(string("rimsha","khan"));
+
+9. Given two values, write a JavaScript program to find out which one is nearest to 100.
+const func=(num1,num2)=>100-num1< 100-num2 ?"num1 is closer":"num2 is closer"
+console.log(func(99,1));
+console.log(func(28,47));
+console.log(func(50,50));
+console.log(func(9,12));
+
+10. Write a javascript program to check a given string contains 2-4 operands of a specified character code?
+const string=(str,char)=>
+str.split('').filter(ch=>ch===char).length;
+const contain3to4=(str,char)=>
+    string(str,char)>=2 && string(str,char)<=4;
+console.log(string("rimsharim",'r'));
+console.log(string("hello",'l'));
+console.log(string("bcbbbdhu",'b'));
