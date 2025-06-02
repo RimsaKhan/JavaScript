@@ -17,7 +17,7 @@ const func=(str)=>
 4. find the current date
 const dates=(date=new Date())=>{
 const days=date.getDate();
-const months=date.getMonth();
+const months=date.getMonth()+1;
 const years=date.getFullYear();
 return `${days}/${months}/${years}`;
 }
