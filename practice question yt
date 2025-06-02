@@ -13,3 +13,12 @@ console.log(getfileextension("rimsha.html.js"));
 const func=(str)=>
         str.split('').map(char=>String.fromCharCode(char.charCodeAt(0)+1)).join('');
     console.log(func("abcd"));
+
+4. find the current date
+const dates=(date=new Date())=>{
+const days=date.getDay();
+const months=date.getMonth();
+const years=date.getFullYear();
+return `${days}/${months}/${years}`;
+}
+console.log(dates());
