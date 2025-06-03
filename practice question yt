@@ -74,3 +74,24 @@ const contain3to4=(str,char)=>
 console.log(string("rimsharim",'r'));
 console.log(string("hello",'l'));
 console.log(string("bcbbbdhu",'b'));
+
+11. Write a JavaScript program to find the number of even digits in an array of integers?
+const arr=(ar)=>{
+    let even=0;
+    let list=[];
+    for(let i=0;i<ar.length;i++){
+    if(ar[i]%2==0){
+     even++;
+     list[i]=ar[i];
+     console.log(`The even numbers are:${list[i]}`);
+    }
+}
+return even;
+}
+console.log(`Therefore the total integers that are even are: ${arr([1,2,3,4,5,6])}`);
+
+Shoter version of question 11
+const func=(arr)=>arr.filter(num=>num%2===0).length;
+console.log (`Therefore the total integers that are even are: ${func([1,2,3,4,5,6])}`);
+console.log (`Therefore the total integers that are even are: ${func([1,58,32,20,6])}`);
+console.log (`Therefore the total integers that are even are: ${func([10,20,4,40,6])}`);
