@@ -120,3 +120,15 @@ return emptyarr;
 console.log (func(evennums(5)));
 console.log (func(evennums(25)));
 console.log (func(evennums(10)));
+
+13. To check if the array is in ascending order or not 
+const func=(num)=>{
+    for(let i=0;i<num.length;i++){
+        if(num[i+1]<num[i])
+            return false;
+        }
+        return true;
+}
+console.log(func([2,15,6,8]));
+console.log(func([1,2,5,4,3,6]));
+console.log(func([1,2,3,4,6,6]));
