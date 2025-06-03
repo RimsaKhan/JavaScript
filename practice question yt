@@ -157,3 +157,9 @@ const arr=(sen)=>sen.replace(/[0-9]/,'$');
 console.log(arr("hell3o wo3rls"));
 console.log(arr("hell3o wo3rls"));
 console.log(arr("Rmsha82o wo3rls"));
+
+
+16. Js progrma that a year is a leap year or not
+const leapyearfunc=(year)=>year%400===0||(year%4===0 && year%100!==0)
+    console.log(leapyearfunc(2013));
+    console.log(leapyearfunc(2003));
