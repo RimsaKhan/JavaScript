@@ -151,3 +151,9 @@ const func=(arr)=>Math.max(...arr.filter(num=>num%2===0));
 console.log(func([2,15,6,80]));
 console.log(func([1,120,60,47,39,60]));
 console.log(func([1,20,30,4,6]));
+
+15. Js program to replace the first digit in a string (should contains at least digit)with $ character
+const arr=(sen)=>sen.replace(/[0-9]/,'$');
+console.log(arr("hell3o wo3rls"));
+console.log(arr("hell3o wo3rls"));
+console.log(arr("Rmsha82o wo3rls"));
