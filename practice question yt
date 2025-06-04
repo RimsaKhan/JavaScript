@@ -191,3 +191,19 @@ const tohex=()=>Math.floor(Math.random()*256).toString(16).padStart(2,'0');
 return`#${tohex()}${tohex()}${tohex()}`;
 }
 console.log(getrandomnum());
+
+19.wriet a js function  that returns true if the provided predicate function returns true for all elements in a collection false otherwise.
+const iseveryelement=(arr,func)=>{
+for(let i=0;i<arr.length;i++){
+    if(!func(arr[i])){
+        return false;
+    }
+}
+return true;
+};
+console.log(iseveryelement([1,2,3,4,5,6],x=>x>0));
+console.log(iseveryelement([1,2,3,4,5,6],x=>x>3));
+
+//Shorter version of 19th question
+console.log([1,2,3,4,5].every(x=>x>0));
+console.log([1,2,3,4,5].every(x=>x>3));
