@@ -172,3 +172,22 @@ const func=(str)=>{
          return twodarr;
 };
 console.log(func("abc,def,ghi,\n jkl,mno,pqr,\n stu,vwx,yza"));
+
+18. Generate hexadecimal color code
+let rr = Math.floor(Math.random() * 256);
+let gg = Math.floor(Math.random() * 256);
+let bb = Math.floor(Math.random() * 256);
+
+let rrhex = rr.toString(16).padStart(2, '0');
+let gghex = gg.toString(16).padStart(2, '0');
+let bbhex = bb.toString(16).padStart(2, '0');
+
+let color = `#${rrhex}${gghex}${bbhex}`;
+console.log(color);
+
+//Shorter version of 18 question
+function getrandomnum(){
+const tohex=()=>Math.floor(Math.random()*256).toString(16).padStart(2,'0');
+return`#${tohex()}${tohex()}${tohex()}`;
+}
+console.log(getrandomnum());
