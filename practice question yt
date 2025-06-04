@@ -163,3 +163,12 @@ console.log(arr("Rmsha82o wo3rls"));
 const leapyearfunc=(year)=>year%400===0||(year%4===0 && year%100!==0)
     console.log(leapyearfunc(2013));
     console.log(leapyearfunc(2003));
+
+17.write a JavaScript program to convert a comma separated value string to a 2D array a new line indicates a new row in the array.
+Example abc, def, ghi, jkl, mno, pqr, stu, bwx, yza
+const func=(str)=>{
+         let rows= str.split("\n");
+         let twodarr=rows.map(row=>row.split(","));
+         return twodarr;
+};
+console.log(func("abc,def,ghi,\n jkl,mno,pqr,\n stu,vwx,yza"));
